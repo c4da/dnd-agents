@@ -1,0 +1,63 @@
+{
+  "name": "dnd-quest-the-red-tithe",
+  "version": "1.0.0",
+  "description": "An unofficial, prompt-based dark-gothic demon-hunting campaign for terminal agents. The party crosses a dying city, descends through a gore-soaked ossuary, and confronts a bell that feeds on forgotten names.",
+  "author": "c4da",
+  "license": "MIT",
+  "repository": "https://github.com/c4da/dnd-agents",
+  "marketplace": {
+    "platform": "aiskillsmarket",
+    "tier": "free",
+    "categories": [
+      "fun",
+      "game",
+      "dnd",
+      "quest-module",
+      "dark-fantasy",
+      "horror",
+      "tabletop"
+    ],
+    "tags": [
+      "ai-skills",
+      "agent-skills",
+      "skill-md",
+      "tabletop-ai",
+      "dnd",
+      "rpg",
+      "dark-fantasy",
+      "gothic-horror",
+      "demon-hunting",
+      "prompt-based"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "claude-code",
+      "cursor",
+      "windsurf",
+      "github-copilot-cli",
+      "antigravity",
+      "hermes",
+      "chatgpt"
+    ],
+    "interfaces": [
+      "skill-md",
+      "system-prompt"
+    ],
+    "runtime": "any",
+    "tools": false,
+    "writes_files": false,
+    "network": false
+  },
+  "provenance": {
+    "hash_algorithm": "SHA-256",
+    "files": [
+      "SKILL.md",
+      "references/encounter-maps.md",
+      "references/monster-statblocks.md"
+    ],
+    "skill_file": "SKILL.md",
+    "skill_file_sha256": "54b6d72dd01942f63a789b479614bf66c110e6cf44a899d0458bce895aafe634",
+    "package_sha256": "909199e6ff7c646676026ffe42f6cd843f00846628127af6b450d6b2f9a45050"
+  }
+}

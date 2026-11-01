@@ -1,12 +1,12 @@
 {
   "name": "dnd-party-of-agents",
-  "version": "1.0.0",
-  "description": "Spawns a full 4-member tabletop D&D adventuring party (Paladin, Barbarian, Rogue, Wizard) in your terminal. When your real-life friends cancel game night again, play D&D with autonomous AI agents who banter, argue over architecture, roll d20 dice, and tackle coding quests together.",
+  "version": "1.1.0",
+  "description": "An unofficial, prompt-based four-character fantasy adventuring party for terminal agents. The party roleplays a Paladin, Barbarian, Rogue, and Wizard with shared d20-style exploration and combat.",
   "author": "c4da",
   "license": "MIT",
-  "repository": "https://github.com/c4da/stupid-ai-skills",
+  "repository": "https://github.com/c4da/dnd-agents",
   "marketplace": {
-    "platform": "stupid-ai-skills",
+    "platform": "aiskillsmarket",
     "tier": "free",
     "categories": [
       "fun",
@@ -15,26 +15,45 @@
       "multi-agent",
       "roleplay",
       "terminal"
+    ],
+    "tags": [
+      "ai-skills",
+      "agent-skills",
+      "skill-md",
+      "tabletop-ai",
+      "dnd",
+      "rpg",
+      "party-roleplay",
+      "prompt-based"
     ]
   },
   "compatibility": {
     "agents": [
       "claude-code",
       "cursor",
+      "windsurf",
       "github-copilot-cli",
       "antigravity",
       "hermes",
       "chatgpt"
     ],
     "interfaces": [
-      "mcp",
-      "cli",
+      "skill-md",
       "system-prompt"
     ],
-    "runtime": "any"
+    "runtime": "any",
+    "tools": false,
+    "writes_files": false,
+    "network": false
   },
   "provenance": {
+    "hash_algorithm": "SHA-256",
+    "files": [
+      "SKILL.md",
+      "references/party-roster.md"
+    ],
     "skill_file": "SKILL.md",
-    "sha256": "3e014ea4fb0f49248c162eba7becc6879bdbc86f887051c07a8ee297f996af6a"
+    "skill_file_sha256": "e91c0aa695047d167d8a698fa8ee97dc92891e31c1fae188b37a65691efaae7e",
+    "package_sha256": "06a1a77ab7bdc020796c134c3c78a4527134ff30c96678a7b04f34911d0aaf59"
   }
 }

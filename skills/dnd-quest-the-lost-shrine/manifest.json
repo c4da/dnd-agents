@@ -1,12 +1,12 @@
 {
   "name": "dnd-quest-the-lost-shrine",
   "version": "1.0.0",
-  "description": "A complete, ready-to-run D&D starter adventure module (\"The Lost Shrine of the Sun-Stone\"). Plugs into classic-dnd-dungeon-master or dnd-party-of-agents to showcase all core tabletop mechanics\u2014stealth, perception, trap disarming, riddles, tactical turn-based boss combat, and loot.",
+  "description": "An unofficial, ready-to-run fantasy starter adventure module (\"The Lost Shrine of the Sun-Stone\") for the Dungeon Master and party roleplay skills. It showcases stealth, traps, riddles, tactical combat, and loot.",
   "author": "c4da",
   "license": "MIT",
-  "repository": "https://github.com/c4da/stupid-ai-skills",
+  "repository": "https://github.com/c4da/dnd-agents",
   "marketplace": {
-    "platform": "stupid-ai-skills",
+    "platform": "aiskillsmarket",
     "tier": "free",
     "categories": [
       "fun",
@@ -15,26 +15,46 @@
       "quest-module",
       "adventure",
       "tabletop"
+    ],
+    "tags": [
+      "ai-skills",
+      "agent-skills",
+      "skill-md",
+      "tabletop-ai",
+      "dnd",
+      "rpg",
+      "adventure-module",
+      "prompt-based"
     ]
   },
   "compatibility": {
     "agents": [
       "claude-code",
       "cursor",
+      "windsurf",
       "github-copilot-cli",
       "antigravity",
       "hermes",
       "chatgpt"
     ],
     "interfaces": [
-      "mcp",
-      "cli",
+      "skill-md",
       "system-prompt"
     ],
-    "runtime": "any"
+    "runtime": "any",
+    "tools": false,
+    "writes_files": false,
+    "network": false
   },
   "provenance": {
+    "hash_algorithm": "SHA-256",
+    "files": [
+      "SKILL.md",
+      "references/encounter-maps.md",
+      "references/monster-statblocks.md"
+    ],
     "skill_file": "SKILL.md",
-    "sha256": "666700bd84bd90a4e8083bb544c3a466cf8f35e3311bf69e7c28e799a6b51e4d"
+    "skill_file_sha256": "4c5f9bc6510c8555be3454420af017fe855868763b7a9ba0ba354958086ea0d3",
+    "package_sha256": "868e23f0fe6b34d752af32fac5452c008889fbbb374ea0c5c71915468c0a0c65"
   }
 }

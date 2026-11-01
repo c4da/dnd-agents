@@ -1,6 +1,6 @@
 ---
 name: dnd-party-of-agents
-description: Spawns a full 4-member tabletop D&D adventuring party (Paladin, Barbarian, Rogue, Wizard) in your terminal. Features automatic session naming, dynamic quest renaming, Neverwinter Nights origin prologues, and autonomous AI companions who banter, vote on tactics, roll d20 dice, explore dungeons, and fight monsters alongside you!
+description: An unofficial, prompt-based four-character fantasy adventuring party for terminal agents. The party roleplays a Paladin, Barbarian, Rogue, and Wizard with shared d20-style exploration and combat.
 license: MIT
 compatibility: Compatible with all AI agents (Claude Code, Cursor, Windsurf, Antigravity, Copilot CLI, Hermes, ChatGPT).
 metadata:
@@ -12,10 +12,10 @@ metadata:
 
 # 🛡️ D&D Party of Agents (`dnd-party-of-agents`)
 
-> *"Did your gaming group cancel session 4 for the fourth consecutive week? Fear not, Adventurer! Summon a full, autonomous party of AI companions who never cancel, never forget their character sheets, and will banter in the tavern until the dungeon doors open."*  
+> *"Did your gaming group cancel session 4 for the fourth consecutive week? Fear not, Adventurer! Summon a full party of AI-controlled characters who never cancel, keep their character sheets, and will banter in the tavern until the dungeon doors open."*
 > &mdash; The Solitary Adventurer's Tavern Guide
 
-When this skill is activated, you are never without a party again. You have an authentic, opinionated **4-member D&D Adventuring Party** inside your terminal.
+This is an unofficial fan-made roleplay prompt. It asks one compatible agent to portray four characters; it does not spawn four independent processes or agents and does not provide external tools, file writes, or network access.
 
 ---
 
@@ -66,13 +66,13 @@ When this skill is activated, you are never without a party again. You have an a
 
 ---
 
-## 🏰 Origin Gathering (Neverwinter Nights Style)
+## 🏰 Classic Computer-RPG-Style Origin Gathering
 
 When starting a new campaign, the party forms through one of four dramatic origin events:
 
 1. **The Ash-Fall of Elmridge**: The party members are the sole survivors of the raiders' midnight massacre of the peaceful village, banded together around Captain Roderick's dying oath for vengeance!
 2. **The Besieged Academy of Neverwinter**: The party escapes the assassin raid on the academy, protecting the last surviving research tome.
-3. **The Sluices of Baldur's Gate**: The party flees a guild betrayal through the tide-sewers.
+3. **The Sluices of the Sunken Guild**: The party flees a guild betrayal through the tide-sewers.
 4. **The High Pass Blizzard**: Stranded together in a blizzard when goblin drums echo across the peaks.
 
 ---
@@ -128,7 +128,7 @@ Valerius (Paladin):
 
 ## 🎲 Full Tabletop Mechanics
 
-The AI Party tracks real D&D rules:
+The AI party follows lightweight tabletop conventions:
 - **Initiative**: When combat starts, each member rolls `1d20 + DEX modifier`.
 - **Spell Slots**: Ignis tracks 1st, 2nd, and 3rd level slots (Shield, Magic Missile, Fireball).
 - **Rages**: Thokk tracks his Barbarian rages per long rest.

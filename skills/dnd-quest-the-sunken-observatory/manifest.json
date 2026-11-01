@@ -1,0 +1,62 @@
+{
+  "name": "dnd-quest-the-sunken-observatory",
+  "version": "1.0.0",
+  "description": "An unofficial, prompt-based exploration adventure for terminal agents. The party climbs to a flooded observatory, reconstructs a broken star map, and decides whether to awaken its lonely caretaker.",
+  "author": "c4da",
+  "license": "MIT",
+  "repository": "https://github.com/c4da/dnd-agents",
+  "marketplace": {
+    "platform": "aiskillsmarket",
+    "tier": "free",
+    "categories": [
+      "fun",
+      "game",
+      "dnd",
+      "quest-module",
+      "exploration",
+      "puzzle",
+      "tabletop"
+    ],
+    "tags": [
+      "ai-skills",
+      "agent-skills",
+      "skill-md",
+      "tabletop-ai",
+      "dnd",
+      "rpg",
+      "observatory",
+      "puzzle",
+      "prompt-based"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "claude-code",
+      "cursor",
+      "windsurf",
+      "github-copilot-cli",
+      "antigravity",
+      "hermes",
+      "chatgpt"
+    ],
+    "interfaces": [
+      "skill-md",
+      "system-prompt"
+    ],
+    "runtime": "any",
+    "tools": false,
+    "writes_files": false,
+    "network": false
+  },
+  "provenance": {
+    "hash_algorithm": "SHA-256",
+    "files": [
+      "SKILL.md",
+      "references/encounter-maps.md",
+      "references/monster-statblocks.md"
+    ],
+    "skill_file": "SKILL.md",
+    "skill_file_sha256": "9bb72da4d34bed29f439a00f0462eea7d90b55168ac7848e0f66ec52d337e2e3",
+    "package_sha256": "a1f53e598e94dc0d652bc98dc0784c42d04c76d1c8e7a4622e61e7f002202d90"
+  }
+}

@@ -1,6 +1,6 @@
 ---
 name: dnd-quest-the-lost-shrine
-description: A complete, ready-to-run D&D starter adventure module ("The Lost Shrine of the Sun-Stone"). Plugs into classic-dnd-dungeon-master or dnd-party-of-agents to showcase all core tabletop mechanics—stealth, perception, trap disarming, riddles, tactical turn-based boss combat, and loot.
+description: An unofficial, ready-to-run fantasy starter adventure module ("The Lost Shrine of the Sun-Stone") for the Dungeon Master and party roleplay skills. It showcases stealth, traps, riddles, tactical combat, and loot.
 license: MIT
 compatibility: Compatible with classic-dnd-dungeon-master, dnd-party-of-agents, and all AI agents (Claude Code, Cursor, Windsurf, Antigravity, Copilot CLI, Hermes, ChatGPT).
 metadata:
@@ -14,7 +14,7 @@ metadata:
 
 > *"The dying village watchman grips your wrist with blood-stained fingers: 'The raiders who burned Elmridge... they stole the sacred Sun-Stone from our chapel altar! Without its blessed light, the village will never be rebuilt and the dark beasts of the crags will consume the survivors. Track them to their sunken shrine... avenge Elmridge!' "*
 
-This skill provides a **complete, turnkey D&D quest module** designed to showcase and guide players through all core tabletop Dungeons & Dragons mechanics.
+This is an unofficial fan-made quest module for use with either roleplay skill. It uses lightweight, d20-inspired tabletop conventions and does not provide external tools, file writes, or network access.
 
 ---
 

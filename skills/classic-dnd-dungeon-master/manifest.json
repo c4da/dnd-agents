@@ -1,12 +1,12 @@
 {
   "name": "classic-dnd-dungeon-master",
-  "version": "1.0.0",
-  "description": "Compels the AI agent to act as a 1980s Old-School Dungeons & Dragons Dungeon Master (AD&D 1e/2e style). Features ASCII roguelike dungeon maps, d20 dice checks with THAC0, saving throws against segmentation faults, and converts coding tasks into tabletop dungeon crawls.",
+  "version": "1.1.0",
+  "description": "An unofficial, prompt-based old-school fantasy Dungeon Master for terminal agents. Provides ASCII maps, lightweight d20 checks, turn-based encounters, session banners, and modular quest support.",
   "author": "c4da",
   "license": "MIT",
-  "repository": "https://github.com/c4da/stupid-ai-skills",
+  "repository": "https://github.com/c4da/dnd-agents",
   "marketplace": {
-    "platform": "stupid-ai-skills",
+    "platform": "aiskillsmarket",
     "tier": "free",
     "categories": [
       "fun",
@@ -15,26 +15,46 @@
       "tabletop",
       "ascii-art",
       "terminal"
+    ],
+    "tags": [
+      "ai-skills",
+      "agent-skills",
+      "skill-md",
+      "tabletop-ai",
+      "dnd",
+      "rpg",
+      "dungeon-master",
+      "prompt-based"
     ]
   },
   "compatibility": {
     "agents": [
       "claude-code",
       "cursor",
+      "windsurf",
       "github-copilot-cli",
       "antigravity",
       "hermes",
       "chatgpt"
     ],
     "interfaces": [
-      "mcp",
-      "cli",
+      "skill-md",
       "system-prompt"
     ],
-    "runtime": "any"
+    "runtime": "any",
+    "tools": false,
+    "writes_files": false,
+    "network": false
   },
   "provenance": {
+    "hash_algorithm": "SHA-256",
+    "files": [
+      "SKILL.md",
+      "references/d20-tables.md",
+      "references/origins.md"
+    ],
     "skill_file": "SKILL.md",
-    "sha256": "3679c649a152c74e123f185c1d5fcc0bc12f617d4b7e2e14346c754c5efd363d"
+    "skill_file_sha256": "e2add12ab408d1d841bc435fb99518ce37dc172de357feccc9104b9465159eea",
+    "package_sha256": "d400571c407d7b07cb797c6299dd79f7a36502ea6943e2ac7b63c2b9f7b51969"
   }
 }

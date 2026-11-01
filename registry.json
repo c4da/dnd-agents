@@ -1,16 +1,26 @@
 {
-  "catalog_version": "1.0.0",
-  "platform": "dnd-agents",
-  "description": "Authentic Dungeons & Dragons tabletop engine, autonomous AI adventuring party, and modular quest modules for terminal agents",
+  "catalog_version": "1.1.0",
+  "platform": "aiskillsmarket",
+  "discovery_tags": [
+    "ai-skills",
+    "agent-skills",
+    "skill-md",
+    "tabletop-ai",
+    "dnd",
+    "rpg",
+    "open-source"
+  ],
+  "description": "Unofficial tabletop roleplay skills for AI agents, including an old-school fantasy DM, a multi-character party, and a starter quest.",
   "repository": "https://github.com/c4da/dnd-agents",
-  "skills_count": 3,
+  "skills_count": 8,
   "skills": [
     {
       "name": "classic-dnd-dungeon-master",
-      "version": "1.0.0",
-      "description": "Compels the AI agent to act as a 1980s Old-School Dungeons & Dragons Dungeon Master (AD&D 1e/2e style). Features ASCII roguelike dungeon maps, d20 dice checks with THAC0, saving throws against segmentation faults, and converts coding tasks into tabletop dungeon crawls.",
+      "version": "1.1.0",
+      "description": "An unofficial, prompt-based old-school fantasy Dungeon Master for terminal agents. Provides ASCII maps, lightweight d20 checks, turn-based encounters, session banners, and modular quest support.",
       "author": "c4da",
       "license": "MIT",
+      "repository": "https://github.com/c4da/dnd-agents",
       "tier": "free",
       "categories": [
         "fun",
@@ -20,31 +30,51 @@
         "ascii-art",
         "terminal"
       ],
+      "tags": [
+        "ai-skills",
+        "agent-skills",
+        "skill-md",
+        "tabletop-ai",
+        "dnd",
+        "rpg",
+        "dungeon-master",
+        "prompt-based"
+      ],
       "compatibility": {
         "agents": [
           "claude-code",
           "cursor",
+          "windsurf",
           "github-copilot-cli",
           "antigravity",
           "hermes",
           "chatgpt"
         ],
         "interfaces": [
-          "mcp",
-          "cli",
+          "skill-md",
           "system-prompt"
         ],
-        "runtime": "any"
+        "runtime": "any",
+        "tools": false,
+        "writes_files": false,
+        "network": false
       },
-      "sha256": "3679c649a152c74e123f185c1d5fcc0bc12f617d4b7e2e14346c754c5efd363d",
+      "sha256": "d400571c407d7b07cb797c6299dd79f7a36502ea6943e2ac7b63c2b9f7b51969",
+      "skill_md_sha256": "e2add12ab408d1d841bc435fb99518ce37dc172de357feccc9104b9465159eea",
+      "files": [
+        "SKILL.md",
+        "references/d20-tables.md",
+        "references/origins.md"
+      ],
       "path": "skills/classic-dnd-dungeon-master"
     },
     {
       "name": "dnd-party-of-agents",
-      "version": "1.0.0",
-      "description": "Spawns a full 4-member tabletop D&D adventuring party (Paladin, Barbarian, Rogue, Wizard) in your terminal. When your real-life friends cancel game night again, play D&D with autonomous AI agents who banter, argue over architecture, roll d20 dice, and tackle coding quests together.",
+      "version": "1.1.0",
+      "description": "An unofficial, prompt-based four-character fantasy adventuring party for terminal agents. The party roleplays a Paladin, Barbarian, Rogue, and Wizard with shared d20-style exploration and combat.",
       "author": "c4da",
       "license": "MIT",
+      "repository": "https://github.com/c4da/dnd-agents",
       "tier": "free",
       "categories": [
         "fun",
@@ -54,31 +84,162 @@
         "roleplay",
         "terminal"
       ],
+      "tags": [
+        "ai-skills",
+        "agent-skills",
+        "skill-md",
+        "tabletop-ai",
+        "dnd",
+        "rpg",
+        "party-roleplay",
+        "prompt-based"
+      ],
       "compatibility": {
         "agents": [
           "claude-code",
           "cursor",
+          "windsurf",
           "github-copilot-cli",
           "antigravity",
           "hermes",
           "chatgpt"
         ],
         "interfaces": [
-          "mcp",
-          "cli",
+          "skill-md",
           "system-prompt"
         ],
-        "runtime": "any"
+        "runtime": "any",
+        "tools": false,
+        "writes_files": false,
+        "network": false
       },
-      "sha256": "3e014ea4fb0f49248c162eba7becc6879bdbc86f887051c07a8ee297f996af6a",
+      "sha256": "06a1a77ab7bdc020796c134c3c78a4527134ff30c96678a7b04f34911d0aaf59",
+      "skill_md_sha256": "e91c0aa695047d167d8a698fa8ee97dc92891e31c1fae188b37a65691efaae7e",
+      "files": [
+        "SKILL.md",
+        "references/party-roster.md"
+      ],
       "path": "skills/dnd-party-of-agents"
+    },
+    {
+      "name": "dnd-quest-the-ember-vault",
+      "version": "1.0.0",
+      "description": "An unofficial, prompt-based underground forge adventure for terminal agents. The party rescues trapped workers, manages a rising heat clock, and decides whether to seal or relight a dangerous ember engine.",
+      "author": "c4da",
+      "license": "MIT",
+      "repository": "https://github.com/c4da/dnd-agents",
+      "tier": "free",
+      "categories": [
+        "fun",
+        "game",
+        "dnd",
+        "quest-module",
+        "dungeon",
+        "crafting",
+        "tabletop"
+      ],
+      "tags": [
+        "ai-skills",
+        "agent-skills",
+        "skill-md",
+        "tabletop-ai",
+        "dnd",
+        "rpg",
+        "forge",
+        "rescue",
+        "prompt-based"
+      ],
+      "compatibility": {
+        "agents": [
+          "claude-code",
+          "cursor",
+          "windsurf",
+          "github-copilot-cli",
+          "antigravity",
+          "hermes",
+          "chatgpt"
+        ],
+        "interfaces": [
+          "skill-md",
+          "system-prompt"
+        ],
+        "runtime": "any",
+        "tools": false,
+        "writes_files": false,
+        "network": false
+      },
+      "sha256": "4058e6ec31cb22b729f9c5912de48628d3afa04174f8bac6ab52437edc293aa5",
+      "skill_md_sha256": "ecab649f3abcbffbab5714d6cbf704812d43720681f31137cc68376110023089",
+      "files": [
+        "SKILL.md",
+        "references/encounter-maps.md",
+        "references/monster-statblocks.md"
+      ],
+      "path": "skills/dnd-quest-the-ember-vault"
+    },
+    {
+      "name": "dnd-quest-the-hollow-lighthouse",
+      "version": "1.0.0",
+      "description": "An unofficial, prompt-based coastal mystery adventure for terminal agents. The party investigates a silent lighthouse, navigates rising water, and chooses whether to redeem or defeat its bound keeper.",
+      "author": "c4da",
+      "license": "MIT",
+      "repository": "https://github.com/c4da/dnd-agents",
+      "tier": "free",
+      "categories": [
+        "fun",
+        "game",
+        "dnd",
+        "quest-module",
+        "mystery",
+        "coastal",
+        "tabletop"
+      ],
+      "tags": [
+        "ai-skills",
+        "agent-skills",
+        "skill-md",
+        "tabletop-ai",
+        "dnd",
+        "rpg",
+        "lighthouse",
+        "mystery",
+        "prompt-based"
+      ],
+      "compatibility": {
+        "agents": [
+          "claude-code",
+          "cursor",
+          "windsurf",
+          "github-copilot-cli",
+          "antigravity",
+          "hermes",
+          "chatgpt"
+        ],
+        "interfaces": [
+          "skill-md",
+          "system-prompt"
+        ],
+        "runtime": "any",
+        "tools": false,
+        "writes_files": false,
+        "network": false
+      },
+      "sha256": "f3cf3aa8dff95ce383126d45e4fae07d20189ccb511de7c84970ad05ed03bfc9",
+      "skill_md_sha256": "3d0ade4f91f3cc893a3d11e41d2bd6fb93c14540f260e848de89594557c07558",
+      "files": [
+        "SKILL.md",
+        "references/encounter-maps.md",
+        "references/monster-statblocks.md"
+      ],
+      "path": "skills/dnd-quest-the-hollow-lighthouse"
     },
     {
       "name": "dnd-quest-the-lost-shrine",
       "version": "1.0.0",
-      "description": "A complete, ready-to-run D&D starter adventure module (\"The Lost Shrine of the Sun-Stone\"). Plugs into classic-dnd-dungeon-master or dnd-party-of-agents to showcase all core tabletop mechanics\u2014stealth, perception, trap disarming, riddles, tactical turn-based boss combat, and loot.",
+      "description": "An unofficial, ready-to-run fantasy starter adventure module (\"The Lost Shrine of the Sun-Stone\") for the Dungeon Master and party roleplay skills. It showcases stealth, traps, riddles, tactical combat, and loot.",
       "author": "c4da",
       "license": "MIT",
+      "repository": "https://github.com/c4da/dnd-agents",
       "tier": "free",
       "categories": [
         "fun",
@@ -88,24 +249,215 @@
         "adventure",
         "tabletop"
       ],
+      "tags": [
+        "ai-skills",
+        "agent-skills",
+        "skill-md",
+        "tabletop-ai",
+        "dnd",
+        "rpg",
+        "adventure-module",
+        "prompt-based"
+      ],
       "compatibility": {
         "agents": [
           "claude-code",
           "cursor",
+          "windsurf",
           "github-copilot-cli",
           "antigravity",
           "hermes",
           "chatgpt"
         ],
         "interfaces": [
-          "mcp",
-          "cli",
+          "skill-md",
           "system-prompt"
         ],
-        "runtime": "any"
+        "runtime": "any",
+        "tools": false,
+        "writes_files": false,
+        "network": false
       },
-      "sha256": "666700bd84bd90a4e8083bb544c3a466cf8f35e3311bf69e7c28e799a6b51e4d",
+      "sha256": "868e23f0fe6b34d752af32fac5452c008889fbbb374ea0c5c71915468c0a0c65",
+      "skill_md_sha256": "4c5f9bc6510c8555be3454420af017fe855868763b7a9ba0ba354958086ea0d3",
+      "files": [
+        "SKILL.md",
+        "references/encounter-maps.md",
+        "references/monster-statblocks.md"
+      ],
       "path": "skills/dnd-quest-the-lost-shrine"
+    },
+    {
+      "name": "dnd-quest-the-red-tithe",
+      "version": "1.0.0",
+      "description": "An unofficial, prompt-based dark-gothic demon-hunting campaign for terminal agents. The party crosses a dying city, descends through a gore-soaked ossuary, and confronts a bell that feeds on forgotten names.",
+      "author": "c4da",
+      "license": "MIT",
+      "repository": "https://github.com/c4da/dnd-agents",
+      "tier": "free",
+      "categories": [
+        "fun",
+        "game",
+        "dnd",
+        "quest-module",
+        "dark-fantasy",
+        "horror",
+        "tabletop"
+      ],
+      "tags": [
+        "ai-skills",
+        "agent-skills",
+        "skill-md",
+        "tabletop-ai",
+        "dnd",
+        "rpg",
+        "dark-fantasy",
+        "gothic-horror",
+        "demon-hunting",
+        "prompt-based"
+      ],
+      "compatibility": {
+        "agents": [
+          "claude-code",
+          "cursor",
+          "windsurf",
+          "github-copilot-cli",
+          "antigravity",
+          "hermes",
+          "chatgpt"
+        ],
+        "interfaces": [
+          "skill-md",
+          "system-prompt"
+        ],
+        "runtime": "any",
+        "tools": false,
+        "writes_files": false,
+        "network": false
+      },
+      "sha256": "909199e6ff7c646676026ffe42f6cd843f00846628127af6b450d6b2f9a45050",
+      "skill_md_sha256": "54b6d72dd01942f63a789b479614bf66c110e6cf44a899d0458bce895aafe634",
+      "files": [
+        "SKILL.md",
+        "references/encounter-maps.md",
+        "references/monster-statblocks.md"
+      ],
+      "path": "skills/dnd-quest-the-red-tithe"
+    },
+    {
+      "name": "dnd-quest-the-sunken-observatory",
+      "version": "1.0.0",
+      "description": "An unofficial, prompt-based exploration adventure for terminal agents. The party climbs to a flooded observatory, reconstructs a broken star map, and decides whether to awaken its lonely caretaker.",
+      "author": "c4da",
+      "license": "MIT",
+      "repository": "https://github.com/c4da/dnd-agents",
+      "tier": "free",
+      "categories": [
+        "fun",
+        "game",
+        "dnd",
+        "quest-module",
+        "exploration",
+        "puzzle",
+        "tabletop"
+      ],
+      "tags": [
+        "ai-skills",
+        "agent-skills",
+        "skill-md",
+        "tabletop-ai",
+        "dnd",
+        "rpg",
+        "observatory",
+        "puzzle",
+        "prompt-based"
+      ],
+      "compatibility": {
+        "agents": [
+          "claude-code",
+          "cursor",
+          "windsurf",
+          "github-copilot-cli",
+          "antigravity",
+          "hermes",
+          "chatgpt"
+        ],
+        "interfaces": [
+          "skill-md",
+          "system-prompt"
+        ],
+        "runtime": "any",
+        "tools": false,
+        "writes_files": false,
+        "network": false
+      },
+      "sha256": "a1f53e598e94dc0d652bc98dc0784c42d04c76d1c8e7a4622e61e7f002202d90",
+      "skill_md_sha256": "9bb72da4d34bed29f439a00f0462eea7d90b55168ac7848e0f66ec52d337e2e3",
+      "files": [
+        "SKILL.md",
+        "references/encounter-maps.md",
+        "references/monster-statblocks.md"
+      ],
+      "path": "skills/dnd-quest-the-sunken-observatory"
+    },
+    {
+      "name": "dnd-quest-the-wolves-of-the-ninth-road",
+      "version": "1.0.0",
+      "description": "An unofficial, prompt-based Roman frontier survival-horror adventure for terminal agents. The party escorts battered legionaries through a supernatural winter, faces werewolves, and can break the curse for a hard-won hopeful ending.",
+      "author": "c4da",
+      "license": "MIT",
+      "repository": "https://github.com/c4da/dnd-agents",
+      "tier": "free",
+      "categories": [
+        "fun",
+        "game",
+        "dnd",
+        "quest-module",
+        "horror",
+        "historical",
+        "survival",
+        "tabletop"
+      ],
+      "tags": [
+        "ai-skills",
+        "agent-skills",
+        "skill-md",
+        "tabletop-ai",
+        "dnd",
+        "rpg",
+        "rome",
+        "legionaries",
+        "werewolves",
+        "survival-horror",
+        "hopeful-ending"
+      ],
+      "compatibility": {
+        "agents": [
+          "claude-code",
+          "cursor",
+          "windsurf",
+          "github-copilot-cli",
+          "antigravity",
+          "hermes",
+          "chatgpt"
+        ],
+        "interfaces": [
+          "skill-md",
+          "system-prompt"
+        ],
+        "runtime": "any",
+        "tools": false,
+        "writes_files": false,
+        "network": false
+      },
+      "sha256": "4e6afe4751c8d92403371bb8c58b97d0ca3f2347cdf9d796d86536deaa4a26cf",
+      "skill_md_sha256": "4a3481f2321f1cb06a5a695b701aa1ec6d426715918f3f709ddf5256ef52c53c",
+      "files": [
+        "SKILL.md",
+        "references/encounter-maps.md",
+        "references/monster-statblocks.md"
+      ],
+      "path": "skills/dnd-quest-the-wolves-of-the-ninth-road"
     }
   ]
 }

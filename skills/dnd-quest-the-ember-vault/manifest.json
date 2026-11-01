@@ -1,0 +1,62 @@
+{
+  "name": "dnd-quest-the-ember-vault",
+  "version": "1.0.0",
+  "description": "An unofficial, prompt-based underground forge adventure for terminal agents. The party rescues trapped workers, manages a rising heat clock, and decides whether to seal or relight a dangerous ember engine.",
+  "author": "c4da",
+  "license": "MIT",
+  "repository": "https://github.com/c4da/dnd-agents",
+  "marketplace": {
+    "platform": "aiskillsmarket",
+    "tier": "free",
+    "categories": [
+      "fun",
+      "game",
+      "dnd",
+      "quest-module",
+      "dungeon",
+      "crafting",
+      "tabletop"
+    ],
+    "tags": [
+      "ai-skills",
+      "agent-skills",
+      "skill-md",
+      "tabletop-ai",
+      "dnd",
+      "rpg",
+      "forge",
+      "rescue",
+      "prompt-based"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "claude-code",
+      "cursor",
+      "windsurf",
+      "github-copilot-cli",
+      "antigravity",
+      "hermes",
+      "chatgpt"
+    ],
+    "interfaces": [
+      "skill-md",
+      "system-prompt"
+    ],
+    "runtime": "any",
+    "tools": false,
+    "writes_files": false,
+    "network": false
+  },
+  "provenance": {
+    "hash_algorithm": "SHA-256",
+    "files": [
+      "SKILL.md",
+      "references/encounter-maps.md",
+      "references/monster-statblocks.md"
+    ],
+    "skill_file": "SKILL.md",
+    "skill_file_sha256": "ecab649f3abcbffbab5714d6cbf704812d43720681f31137cc68376110023089",
+    "package_sha256": "4058e6ec31cb22b729f9c5912de48628d3afa04174f8bac6ab52437edc293aa5"
+  }
+}

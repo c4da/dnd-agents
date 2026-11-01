@@ -1,4 +1,4 @@
-# 🏰 Neverwinter Nights Style Starting Origins
+# 🏰 Classic Computer-RPG-Style Starting Origins
 
 When starting a campaign, the Dungeon Master presents or assigns one of these atmospheric origins based on the player's class, race, or preference:
 
@@ -43,7 +43,7 @@ When starting a campaign, the Dungeon Master presents or assigns one of these at
 
 ---
 
-## ⚓ Origin 3: The Sluices of the Sunken Guild (Baldur's Gate)
+## ⚓ Origin 3: The Sluices of the Sunken Guild
 *Recommended for: Rogue, Bard, Warlock.*
 
 ### The Prologue

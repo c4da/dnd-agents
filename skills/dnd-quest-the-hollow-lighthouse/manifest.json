@@ -1,0 +1,62 @@
+{
+  "name": "dnd-quest-the-hollow-lighthouse",
+  "version": "1.0.0",
+  "description": "An unofficial, prompt-based coastal mystery adventure for terminal agents. The party investigates a silent lighthouse, navigates rising water, and chooses whether to redeem or defeat its bound keeper.",
+  "author": "c4da",
+  "license": "MIT",
+  "repository": "https://github.com/c4da/dnd-agents",
+  "marketplace": {
+    "platform": "aiskillsmarket",
+    "tier": "free",
+    "categories": [
+      "fun",
+      "game",
+      "dnd",
+      "quest-module",
+      "mystery",
+      "coastal",
+      "tabletop"
+    ],
+    "tags": [
+      "ai-skills",
+      "agent-skills",
+      "skill-md",
+      "tabletop-ai",
+      "dnd",
+      "rpg",
+      "lighthouse",
+      "mystery",
+      "prompt-based"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "claude-code",
+      "cursor",
+      "windsurf",
+      "github-copilot-cli",
+      "antigravity",
+      "hermes",
+      "chatgpt"
+    ],
+    "interfaces": [
+      "skill-md",
+      "system-prompt"
+    ],
+    "runtime": "any",
+    "tools": false,
+    "writes_files": false,
+    "network": false
+  },
+  "provenance": {
+    "hash_algorithm": "SHA-256",
+    "files": [
+      "SKILL.md",
+      "references/encounter-maps.md",
+      "references/monster-statblocks.md"
+    ],
+    "skill_file": "SKILL.md",
+    "skill_file_sha256": "3d0ade4f91f3cc893a3d11e41d2bd6fb93c14540f260e848de89594557c07558",
+    "package_sha256": "f3cf3aa8dff95ce383126d45e4fae07d20189ccb511de7c84970ad05ed03bfc9"
+  }
+}

@@ -1,6 +1,6 @@
-# 👥 Pure D&D Party Dossier
+# 👥 Fantasy Party Dossier
 
-Complete stats and roleplay guidelines for the 4 autonomous companions:
+Complete stats and roleplay guidelines for the four portrayed companions:
 
 ---
 

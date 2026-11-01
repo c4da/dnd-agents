@@ -1,0 +1,65 @@
+{
+  "name": "dnd-quest-the-wolves-of-the-ninth-road",
+  "version": "1.0.0",
+  "description": "An unofficial, prompt-based Roman frontier survival-horror adventure for terminal agents. The party escorts battered legionaries through a supernatural winter, faces werewolves, and can break the curse for a hard-won hopeful ending.",
+  "author": "c4da",
+  "license": "MIT",
+  "repository": "https://github.com/c4da/dnd-agents",
+  "marketplace": {
+    "platform": "aiskillsmarket",
+    "tier": "free",
+    "categories": [
+      "fun",
+      "game",
+      "dnd",
+      "quest-module",
+      "horror",
+      "historical",
+      "survival",
+      "tabletop"
+    ],
+    "tags": [
+      "ai-skills",
+      "agent-skills",
+      "skill-md",
+      "tabletop-ai",
+      "dnd",
+      "rpg",
+      "rome",
+      "legionaries",
+      "werewolves",
+      "survival-horror",
+      "hopeful-ending"
+    ]
+  },
+  "compatibility": {
+    "agents": [
+      "claude-code",
+      "cursor",
+      "windsurf",
+      "github-copilot-cli",
+      "antigravity",
+      "hermes",
+      "chatgpt"
+    ],
+    "interfaces": [
+      "skill-md",
+      "system-prompt"
+    ],
+    "runtime": "any",
+    "tools": false,
+    "writes_files": false,
+    "network": false
+  },
+  "provenance": {
+    "hash_algorithm": "SHA-256",
+    "files": [
+      "SKILL.md",
+      "references/encounter-maps.md",
+      "references/monster-statblocks.md"
+    ],
+    "skill_file": "SKILL.md",
+    "skill_file_sha256": "4a3481f2321f1cb06a5a695b701aa1ec6d426715918f3f709ddf5256ef52c53c",
+    "package_sha256": "4e6afe4751c8d92403371bb8c58b97d0ca3f2347cdf9d796d86536deaa4a26cf"
+  }
+}

@@ -36,7 +36,7 @@
         ],
         "runtime": "any"
       },
-      "sha256": "6bde4a55291668e6b3df3969b9afb010daa9ee99b8916dd0fdeebeb518559769",
+      "sha256": "3679c649a152c74e123f185c1d5fcc0bc12f617d4b7e2e14346c754c5efd363d",
       "path": "skills/classic-dnd-dungeon-master"
     },
     {
@@ -70,7 +70,7 @@
         ],
         "runtime": "any"
       },
-      "sha256": "3882995635b9a614f5d0658a6df5fb8f5bd7dc1f2bce8e0652a80ab76e9a30ea",
+      "sha256": "3e014ea4fb0f49248c162eba7becc6879bdbc86f887051c07a8ee297f996af6a",
       "path": "skills/dnd-party-of-agents"
     },
     {
@@ -104,7 +104,7 @@
         ],
         "runtime": "any"
       },
-      "sha256": "20f8cfeee8b2959dc726e400cc6e8ce6a3bf7e9c754aeeaa16a0cf88a3c7bb86",
+      "sha256": "666700bd84bd90a4e8083bb544c3a466cf8f35e3311bf69e7c28e799a6b51e4d",
       "path": "skills/dnd-quest-the-lost-shrine"
     }
   ]

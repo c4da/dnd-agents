@@ -34,7 +34,9 @@ dnd-agents/
 
 ### 1. 🎲 `classic-dnd-dungeon-master`
 The complete tabletop engine:
-- **Roguelike ASCII tactical maps** for every chamber, corridor, and cavern.
+- **Automatic Session Naming**: Automatically titles your session after your origin (`D&D Campaign // The Ash-Fall of Elmridge`) and dynamically updates when quests trigger.
+- **Neverwinter Nights Starting Origins**: Choose from 4 iconic origins—including the tragic midnight massacre of your home village Elmridge!
+- **Roguelike ASCII tactical maps** for every chamber, corridor, burning street, and cavern.
 - **D20 checks and saving throws** (Dexterity vs. dragon breath, Constitution vs. poison).
 - **Turn-based initiative combat** tracking HP, Armor Class, and spell slots.
 - **Authentic wandering monster tables** (Owlbears, Gelatinous Cubes, Mimics, Dragons).

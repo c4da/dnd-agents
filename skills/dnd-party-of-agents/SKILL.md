@@ -1,13 +1,13 @@
 ---
 name: dnd-party-of-agents
-description: Spawns a full 4-member tabletop D&D adventuring party (Paladin, Barbarian, Rogue, Wizard) in your terminal. When your real-life friends cancel game night again, play real D&D with autonomous AI companions who banter, vote on tactics, roll d20 dice, explore dungeons, and fight monsters alongside you!
+description: Spawns a full 4-member tabletop D&D adventuring party (Paladin, Barbarian, Rogue, Wizard) in your terminal. Features automatic session naming, dynamic quest renaming, Neverwinter Nights origin prologues, and autonomous AI companions who banter, vote on tactics, roll d20 dice, explore dungeons, and fight monsters alongside you!
 license: MIT
 compatibility: Compatible with all AI agents (Claude Code, Cursor, Windsurf, Antigravity, Copilot CLI, Hermes, ChatGPT).
 metadata:
   author: c4da
-  version: "1.0.0"
+  version: "1.1.0"
   categories: ["fun", "game", "dnd", "multi-agent", "roleplay", "terminal"]
-  tags: ["dnd", "party", "multi-agent", "tabletop", "ascii-art", "rpg", "dice-roll", "dungeon-crawl"]
+  tags: ["dnd", "party", "multi-agent", "tabletop", "ascii-art", "rpg", "dice-roll", "dungeon-crawl", "neverwinter-nights"]
 ---
 
 # 🛡️ D&D Party of Agents (`dnd-party-of-agents`)
@@ -16,6 +16,27 @@ metadata:
 > &mdash; The Solitary Adventurer's Tavern Guide
 
 When this skill is activated, you are never without a party again. You have an authentic, opinionated **4-member D&D Adventuring Party** inside your terminal.
+
+---
+
+## 🏷️ Automatic Session Naming & Dynamic Quest Renaming Protocol
+
+> [!IMPORTANT]
+> **Dynamic Session Header Protocol**:
+> 1. **On Party Invocation**: Render the thematic campaign banner with the party roster and active origin:
+>    ```text
+>    ╔═══════════════════════════════════════════════════════════════════════════════╗
+>    ║ 🛡️ D&D PARTY SESSION: The Fellowship of the Burning Hearth                   ║
+>    ║ ORIGIN: The Ash-Fall of Elmridge │ COMPANIONS: Valerius, Thokk, Lyra, Ignis   ║
+>    ╚═══════════════════════════════════════════════════════════════════════════════╝
+>    ```
+> 2. **When a Quest is Activated**: Update and rename the session banner immediately:
+>    ```text
+>    ╔═══════════════════════════════════════════════════════════════════════════════╗
+>    ║ ⚔️ ACTIVE QUEST: The Lost Shrine of the Sun-Stone                             ║
+>    ║ CHAPTER: Act I - The Overgrown Ravine │ PARTY LEADER: You                     ║
+>    ╚═══════════════════════════════════════════════════════════════════════════════╝
+>    ```
 
 ---
 
@@ -42,6 +63,17 @@ When this skill is activated, you are never without a party again. You have an a
 ║                  │ "Do not touch the glyphs! Did nobody study ancient Elven?" ║
 ╚═══════════════════════════════════════════════════════════════════════════════╝
 ```
+
+---
+
+## 🏰 Origin Gathering (Neverwinter Nights Style)
+
+When starting a new campaign, the party forms through one of four dramatic origin events:
+
+1. **The Ash-Fall of Elmridge**: The party members are the sole survivors of the raiders' midnight massacre of the peaceful village, banded together around Captain Roderick's dying oath for vengeance!
+2. **The Besieged Academy of Neverwinter**: The party escapes the assassin raid on the academy, protecting the last surviving research tome.
+3. **The Sluices of Baldur's Gate**: The party flees a guild betrayal through the tide-sewers.
+4. **The High Pass Blizzard**: Stranded together in a blizzard when goblin drums echo across the peaks.
 
 ---
 
@@ -108,7 +140,6 @@ The AI Party tracks real D&D rules:
 ## 🎁 Pure Fantasy Loot Tables
 
 Roll 1d6 after clearing a dungeon boss:
-
 1. ⚔️ **Flame Tongue Longsword**: Speaks command word to shed fire (deals extra 2d6 fire damage).
 2. 🎒 **Bag of Holding**: Extradimensional pouch holding up to 500 lbs of gear.
 3. 👢 **Boots of Elvenkind**: Grants advantage on Stealth checks to move silently.

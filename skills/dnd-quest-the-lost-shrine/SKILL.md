@@ -12,9 +12,23 @@ metadata:
 
 # ⚔️ D&D Adventure Module: The Lost Shrine of the Sun-Stone (`dnd-quest-the-lost-shrine`)
 
-> *"The village elder grips your arm with trembling hands: 'The goblins stole the Sun-Stone from our altar under cover of storm! Without its golden light, our crops will wither and the shadow beasts of the crags will descend upon us. Recover the stone from their sunken shrine, brave adventurers, and glory shall be yours!' "*
+> *"The dying village watchman grips your wrist with blood-stained fingers: 'The raiders who burned Elmridge... they stole the sacred Sun-Stone from our chapel altar! Without its blessed light, the village will never be rebuilt and the dark beasts of the crags will consume the survivors. Track them to their sunken shrine... avenge Elmridge!' "*
 
 This skill provides a **complete, turnkey D&D quest module** designed to showcase and guide players through all core tabletop Dungeons & Dragons mechanics.
+
+---
+
+## 🏷️ Dynamic Session Renaming Trigger
+
+> [!IMPORTANT]
+> **Upon Quest Activation**:
+> Immediately update the session banner to reflect the active quest, chapter, and origin objective:
+> ```text
+> ╔═══════════════════════════════════════════════════════════════════════════════╗
+> ║ ⚔️ ACTIVE QUEST: The Lost Shrine of the Sun-Stone                             ║
+> ║ CHAPTER: Act I - The Overgrown Ravine │ OBJECTIVE: Avenge the Fallen of Elmridge║
+> ╚═══════════════════════════════════════════════════════════════════════════════╝
+> ```
 
 ---
 

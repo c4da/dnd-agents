@@ -32,9 +32,7 @@ any referenced content files.
   <img src="assets/the-wolves-of-the-ninth-road-flyer.jpg" alt="The Wolves of the Ninth Road Roman frontier horror flyer" width="49%">
 </p>
 
-These are original promotional illustrations for this repository. They do not
-depict Forgotten Realms or any other third-party setting, characters, logos,
-or trademarked artwork.
+These are original promotional illustrations for this repository.
 
 ---
 

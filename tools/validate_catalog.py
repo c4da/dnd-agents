@@ -25,6 +25,7 @@ REGISTRY_FILE = ROOT_DIR / "registry.json"
 EXPECTED_REPOSITORY = "https://github.com/c4da/dnd-agents"
 EXPECTED_MARKETPLACE = "aiskillsmarket"
 CATALOG_VERSION = "1.1.0"
+TEXT_SUFFIXES = {".csv", ".json", ".md", ".toml", ".txt", ".yaml", ".yml"}
 DISCOVERY_TAGS = [
     "ai-skills",
     "agent-skills",
@@ -44,6 +45,14 @@ def json_dump(value: Any) -> str:
 
 def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
+
+
+def canonical_file_bytes(path: Path) -> bytes:
+    """Return stable bytes for hashing text files across operating systems."""
+    data = path.read_bytes()
+    if path.suffix.lower() in TEXT_SUFFIXES:
+        return data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return data
 
 
 def package_files(folder: Path) -> list[Path]:
@@ -67,7 +76,7 @@ def package_hash(folder: Path, files: list[Path]) -> str:
         relative = path.relative_to(folder).as_posix().encode("utf-8")
         digest.update(relative)
         digest.update(b"\0")
-        digest.update(path.read_bytes())
+        digest.update(canonical_file_bytes(path))
         digest.update(b"\0")
     return digest.hexdigest()
 
@@ -242,7 +251,7 @@ def build_catalog(check_provenance: bool) -> tuple[dict[str, Any], dict[Path, di
             errors.append(f"{folder.name}: package has no content files")
             continue
         relative_files = [path.relative_to(folder).as_posix() for path in files]
-        skill_hash = sha256_bytes(skill_file.read_bytes())
+        skill_hash = sha256_bytes(canonical_file_bytes(skill_file))
         digest = package_hash(folder, files)
         expected_provenance = {
             "hash_algorithm": "SHA-256",

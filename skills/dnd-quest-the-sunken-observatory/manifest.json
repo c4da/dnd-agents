@@ -56,7 +56,7 @@
       "references/monster-statblocks.md"
     ],
     "skill_file": "SKILL.md",
-    "skill_file_sha256": "9bb72da4d34bed29f439a00f0462eea7d90b55168ac7848e0f66ec52d337e2e3",
-    "package_sha256": "a1f53e598e94dc0d652bc98dc0784c42d04c76d1c8e7a4622e61e7f002202d90"
+    "skill_file_sha256": "5fbd5cb988f38c4d446b91bdb95554e69fb682148a416cb987e3b4284786fa83",
+    "package_sha256": "7230655a7443aa9bbdaa1c9929987cfeb6674882c032ec6cb501b2ab4cc9dbe8"
   }
 }

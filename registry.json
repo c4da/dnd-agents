@@ -168,8 +168,8 @@
         "writes_files": false,
         "network": false
       },
-      "sha256": "4058e6ec31cb22b729f9c5912de48628d3afa04174f8bac6ab52437edc293aa5",
-      "skill_md_sha256": "ecab649f3abcbffbab5714d6cbf704812d43720681f31137cc68376110023089",
+      "sha256": "bd60ff4ba9ec8915ffa24d5f169a60471cddae686aa588887844adf17fe290a4",
+      "skill_md_sha256": "dbd4d3d203e1b4abf0cb012fdd7000057261f436014b1e55e26393ed37efa0ff",
       "files": [
         "SKILL.md",
         "references/encounter-maps.md",
@@ -224,8 +224,8 @@
         "writes_files": false,
         "network": false
       },
-      "sha256": "f3cf3aa8dff95ce383126d45e4fae07d20189ccb511de7c84970ad05ed03bfc9",
-      "skill_md_sha256": "3d0ade4f91f3cc893a3d11e41d2bd6fb93c14540f260e848de89594557c07558",
+      "sha256": "aeb67830291570abe99ef74d0eb42b64597b718830b5855b922d8ef3ec0d0cce",
+      "skill_md_sha256": "e194dfbde1eed57569c94930098568c681a6e87c4e704624a8f1eff0682c44b9",
       "files": [
         "SKILL.md",
         "references/encounter-maps.md",
@@ -335,8 +335,8 @@
         "writes_files": false,
         "network": false
       },
-      "sha256": "909199e6ff7c646676026ffe42f6cd843f00846628127af6b450d6b2f9a45050",
-      "skill_md_sha256": "54b6d72dd01942f63a789b479614bf66c110e6cf44a899d0458bce895aafe634",
+      "sha256": "1f58bb01811aa9e24a0825b7727cb6ca400dd3474e75056b6abb27fa0c874a30",
+      "skill_md_sha256": "25413f2eacd0764351d5e99323fd8033d7c19cfa5b58f0956f54d56d833b394b",
       "files": [
         "SKILL.md",
         "references/encounter-maps.md",
@@ -391,8 +391,8 @@
         "writes_files": false,
         "network": false
       },
-      "sha256": "a1f53e598e94dc0d652bc98dc0784c42d04c76d1c8e7a4622e61e7f002202d90",
-      "skill_md_sha256": "9bb72da4d34bed29f439a00f0462eea7d90b55168ac7848e0f66ec52d337e2e3",
+      "sha256": "7230655a7443aa9bbdaa1c9929987cfeb6674882c032ec6cb501b2ab4cc9dbe8",
+      "skill_md_sha256": "5fbd5cb988f38c4d446b91bdb95554e69fb682148a416cb987e3b4284786fa83",
       "files": [
         "SKILL.md",
         "references/encounter-maps.md",
@@ -450,8 +450,8 @@
         "writes_files": false,
         "network": false
       },
-      "sha256": "4e6afe4751c8d92403371bb8c58b97d0ca3f2347cdf9d796d86536deaa4a26cf",
-      "skill_md_sha256": "4a3481f2321f1cb06a5a695b701aa1ec6d426715918f3f709ddf5256ef52c53c",
+      "sha256": "6e799fe8bcecb4fe3af48ca08f159777d3bbc72ed7be801237a4d737814e8524",
+      "skill_md_sha256": "1d93eebf92a08a59bd852abccf5e2644cc7940c3542de0dd01e20cbd76d391a9",
       "files": [
         "SKILL.md",
         "references/encounter-maps.md",

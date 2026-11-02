@@ -22,6 +22,7 @@ from typing import Any
 ROOT_DIR = Path(__file__).resolve().parent.parent
 SKILLS_DIR = ROOT_DIR / "skills"
 REGISTRY_FILE = ROOT_DIR / "registry.json"
+ROOT_SKILL_FILE = ROOT_DIR / "SKILL.md"
 EXPECTED_REPOSITORY = "https://github.com/c4da/dnd-agents"
 EXPECTED_MARKETPLACE = "aiskillsmarket"
 CATALOG_VERSION = "1.1.0"
@@ -304,6 +305,7 @@ def build_catalog(check_provenance: bool) -> tuple[dict[str, Any], dict[Path, di
 
     catalog = {
         "catalog_version": CATALOG_VERSION,
+        "entrypoint": "SKILL.md",
         "platform": EXPECTED_MARKETPLACE,
         "discovery_tags": DISCOVERY_TAGS,
         "description": "Unofficial tabletop roleplay skills for AI agents, including an old-school fantasy DM, a multi-character party, and a starter quest.",
@@ -331,6 +333,17 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    if not ROOT_SKILL_FILE.exists():
+        print("[-] Missing repository SKILL.md file")
+        return 1
+    try:
+        root_frontmatter = parse_frontmatter(ROOT_SKILL_FILE)
+    except ValueError as exc:
+        print(f"[-] repository SKILL.md: {exc}")
+        return 1
+    if root_frontmatter.get("name") != "dnd-agents":
+        print("[-] repository SKILL.md: name must be dnd-agents")
+        return 1
     if not (ROOT_DIR / "LICENSE").exists():
         print("[-] Missing repository LICENSE file")
         return 1

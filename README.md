@@ -21,6 +21,10 @@ install an individual package from `skills/<skill-name>/`. Each package is
 self-contained and includes `SKILL.md`, machine-readable `manifest.json`, and
 any referenced content files.
 
+The root [`SKILL.md`](SKILL.md) is the marketplace entrypoint for the complete
+collection. Use it when an index requires a repository-level skill file; use
+the package-specific files for direct installation.
+
 ## 🖼️ Campaign Flyers
 
 <p align="center">
@@ -68,6 +72,7 @@ runtime, no external tool access, no file writing, and no network dependency.
 
 ```text
 dnd-agents/
+├── SKILL.md                        # Marketplace entrypoint and campaign router
 ├── assets/                         # README campaign flyers
 ├── skills/
 │   ├── classic-dnd-dungeon-master    # Prompt-based fantasy DM with ASCII maps and d20-style checks

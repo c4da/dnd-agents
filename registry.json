@@ -12,7 +12,7 @@
   ],
   "description": "Unofficial tabletop roleplay skills for AI agents, including an old-school fantasy DM, a multi-character party, and a starter quest.",
   "repository": "https://github.com/c4da/dnd-agents",
-  "skills_count": 8,
+  "skills_count": 9,
   "skills": [
     {
       "name": "classic-dnd-dungeon-master",
@@ -399,6 +399,66 @@
         "references/monster-statblocks.md"
       ],
       "path": "skills/dnd-quest-the-sunken-observatory"
+    },
+    {
+      "name": "dnd-quest-the-wolf-host",
+      "version": "1.0.0",
+      "description": "An unofficial, prompt-based sequel to The Wolves of the Ninth Road for terminal agents. A much larger supernatural pack assaults a rebuilding Roman cohort, forcing the party to survive a siege and uncover what is driving the wolves.",
+      "author": "c4da",
+      "license": "MIT",
+      "repository": "https://github.com/c4da/dnd-agents",
+      "tier": "free",
+      "categories": [
+        "fun",
+        "game",
+        "dnd",
+        "quest-module",
+        "horror",
+        "historical",
+        "siege",
+        "tabletop"
+      ],
+      "tags": [
+        "ai-skills",
+        "agent-skills",
+        "skill-md",
+        "tabletop-ai",
+        "dnd",
+        "rpg",
+        "rome",
+        "legionaries",
+        "werewolves",
+        "wolf-pack",
+        "survival-horror",
+        "sequel"
+      ],
+      "compatibility": {
+        "agents": [
+          "claude-code",
+          "cursor",
+          "windsurf",
+          "github-copilot-cli",
+          "antigravity",
+          "hermes",
+          "chatgpt"
+        ],
+        "interfaces": [
+          "skill-md",
+          "system-prompt"
+        ],
+        "runtime": "any",
+        "tools": false,
+        "writes_files": false,
+        "network": false
+      },
+      "sha256": "2db6e799488e2334fcb9e9264a65fd784decfd1e143d3ffd64fbcedda857c9e3",
+      "skill_md_sha256": "294977e8c3b658b8b970a9e2e78471b1ee777cc5c92c0c942ae441108a98a4e7",
+      "files": [
+        "SKILL.md",
+        "references/encounter-maps.md",
+        "references/monster-statblocks.md"
+      ],
+      "path": "skills/dnd-quest-the-wolf-host"
     },
     {
       "name": "dnd-quest-the-wolves-of-the-ninth-road",

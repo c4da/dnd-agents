@@ -44,9 +44,11 @@ These are original promotional illustrations for this repository.
 | [The Sunken Observatory](skills/dnd-quest-the-sunken-observatory/SKILL.md) | Exploration and puzzle | 2–4 | Rebuild a star map in a flooded ruin |
 | [The Red Tithe](skills/dnd-quest-the-red-tithe/SKILL.md) | Grim gothic horror | 3–5 | Descend beneath a dying city to break a soul-fed bell |
 | [The Wolves of the Ninth Road](skills/dnd-quest-the-wolves-of-the-ninth-road/SKILL.md) | Roman frontier survival horror | 2–4 | Save legionaries and break a werewolf curse before dawn |
+| [The Wolf Host at Castra Luna](skills/dnd-quest-the-wolf-host/SKILL.md) | Roman siege survival horror | 3–5 | Defend a rebuilding cohort from a much larger supernatural pack |
 
-The last two campaigns are the darkest. Both preserve a path to mercy; **The
-Wolves of the Ninth Road** is specifically designed to end on hope.
+The last three campaigns are the darkest. All preserve a path to mercy; **The
+Wolves of the Ninth Road** and **The Wolf Host at Castra Luna** are designed to
+end on hope.
 
 ---
 
@@ -75,7 +77,8 @@ dnd-agents/
 │   ├── dnd-quest-the-ember-vault     # Underground rescue with a rising-heat clock
 │   ├── dnd-quest-the-sunken-observatory # Flooded ruin with a star-map puzzle
 │   ├── dnd-quest-the-red-tithe        # Dark-gothic, graphic-fantasy campaign
-│   └── dnd-quest-the-wolves-of-the-ninth-road # Roman frontier werewolf survival horror
+│   ├── dnd-quest-the-wolves-of-the-ninth-road # Roman frontier werewolf survival horror
+│   └── dnd-quest-the-wolf-host        # Sequel: Roman siege against a larger wolf host
 ```
 
 ### 1. 🎲 `classic-dnd-dungeon-master`
@@ -114,6 +117,8 @@ A turnkey starter quest (*The Lost Shrine of the Sun-Stone*) designed to test an
 - **`dnd-quest-the-wolves-of-the-ninth-road`**: Escort Roman legionaries
   through a supernatural winter, face werewolves, and break the curse before
   dawn.
+- **`dnd-quest-the-wolf-host`**: Continue the story at Castra Luna as the
+  restored cohort faces a much larger pack and the force driving it.
 
 > **Content note:** `dnd-quest-the-red-tithe` is intentionally grim and
 > includes graphic fantasy violence, ritual horror, plague imagery, and bleak

@@ -72,4 +72,3 @@
   speaks with a dead legionary's voice and loses its resistances for one
   round. A successful final release action ends the encounter without killing
   it.
-

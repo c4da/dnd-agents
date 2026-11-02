@@ -48,4 +48,3 @@
   #   N       HORN        #   N = Names of the dead
   # # # # # # # # # # # # #   FORT = Surviving cohort
 ```
-

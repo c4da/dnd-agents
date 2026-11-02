@@ -451,7 +451,7 @@
         "writes_files": false,
         "network": false
       },
-      "sha256": "2db6e799488e2334fcb9e9264a65fd784decfd1e143d3ffd64fbcedda857c9e3",
+      "sha256": "5165731673b15271756b0896de6756d5d171d22c5c739500d85fb2b7cab63c5f",
       "skill_md_sha256": "294977e8c3b658b8b970a9e2e78471b1ee777cc5c92c0c942ae441108a98a4e7",
       "files": [
         "SKILL.md",

@@ -51,7 +51,7 @@ Players can command a visual representation at any time during play:
 - `/render boss` or `/illustrate enemy`: Focus the artwork on the current enemy, monster, or boss.
 - `/render party`: Render a group portrait of the adventuring party in their current condition and marching order.
 - `/render action`: Capture the dramatic peak of the current turn's combat action.
-- `/style <classic|gothic|matte|pixel>`: Switch the preferred rendering style.
+- `/style <classic|gothic|matte|pixel|frontier>`: Switch the preferred rendering style.
 
 ---
 
@@ -124,6 +124,8 @@ The illustrator supports four signature tabletop art aesthetics:
    - Widescreen 16:9 digital matte painting, volumetric atmospheric haze, radiant magical glows, rich saturated color palettes.
 4. **`pixel` (Retro Roguelike ANSI / ASCII)**:
    - Terminal-native multi-block ASCII art with borders, glyph legends, and tactical depth.
+5. **`frontier` (Roman Frontier Horror & Dual-Tone Chiaroscuro)**:
+   - The signature aesthetic of *The Wolves of the Ninth Road*: gritty battle-scarred legionaries huddled behind timber palisades around warm campfire embers, contrasting cold alpine snowdrifts, a ruined mountain watchtower, and a towering werewolf silhouette framed against a full moon.
 
 For complete prompt formulas and camera directives, see [`references/art-styles.md`](references/art-styles.md).
 

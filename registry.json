@@ -514,10 +514,11 @@
         "writes_files": false,
         "network": false
       },
-      "sha256": "6e799fe8bcecb4fe3af48ca08f159777d3bbc72ed7be801237a4d737814e8524",
+      "sha256": "b77cfc8e15bf822bed38041b273da868b3bd13e534cc75e51a2e38063f61b89b",
       "skill_md_sha256": "1d93eebf92a08a59bd852abccf5e2644cc7940c3542de0dd01e20cbd76d391a9",
       "files": [
         "SKILL.md",
+        "references/art-direction.md",
         "references/encounter-maps.md",
         "references/monster-statblocks.md"
       ],
@@ -570,8 +571,8 @@
         "writes_files": false,
         "network": false
       },
-      "sha256": "9aab126c98e737a7d50f1d7f7bdaa37ddd240581b0d7ab2534fe6c0579875c5e",
-      "skill_md_sha256": "a6df6a507567ec528ab1e421bb5dcf35f949afb7bbaefdbe59bbf1663a0a2dc9",
+      "sha256": "48d3389a9aa79443ef0f369ae61b15ab504380eaa95e5c626a4a4a23f88ba9db",
+      "skill_md_sha256": "8f66b495841b7dea3b0d51e7f257c6cad5a25a63ebb4f4b07e36f53d2aa83a03",
       "files": [
         "SKILL.md",
         "references/art-styles.md",

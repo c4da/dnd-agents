@@ -6,24 +6,20 @@
 
 [![GitHub Topics](https://img.shields.io/badge/topics-ai--skills%20%7C%20agent--skills%20%7C%20skill--md-purple.svg)](https://github.com/c4da/dnd-agents/topics)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![SkillsMarket](https://img.shields.io/badge/SkillsMarket-submit-blue.svg)](https://aiskillsmarket.com/submit)
 [![Fan-made](https://img.shields.io/badge/status-unofficial%20fan--made-orange.svg)](NOTICE.md)
 
 > **Notice:** This is an unofficial fan-made project. It is not affiliated with
 > or endorsed by Wizards of the Coast or any other rights holder. See
-> [NOTICE.md](NOTICE.md) before redistributing or monetizing listings.
+> [NOTICE.md](NOTICE.md) before redistributing or using.
 
 **Discovery tags:** `#ai-skills` `#agent-skills` `#skill-md` `#tabletop-ai`
 `#dnd` `#rpg` `#open-source`
 
-Marketplace indexes can use [`registry.json`](registry.json) for the catalog or
-install an individual package from `skills/<skill-name>/`. Each package is
+You can install the entire collection via the root [`SKILL.md`](SKILL.md) or
+install individual packages from `skills/<skill-name>/`. Each package is
 self-contained and includes `SKILL.md`, machine-readable `manifest.json`, and
-any referenced content files.
-
-The root [`SKILL.md`](SKILL.md) is the marketplace entrypoint for the complete
-collection. Use it when an index requires a repository-level skill file; use
-the package-specific files for direct installation.
+any referenced content files. For programmatic catalog access,
+[`registry.json`](registry.json) tracks all packages and verification hashes.
 
 ## 🖼️ Campaign Flyers
 
@@ -72,7 +68,7 @@ runtime, no external tool access, no file writing, and no network dependency.
 
 ```text
 dnd-agents/
-├── SKILL.md                        # Marketplace entrypoint and campaign router
+├── SKILL.md                        # Root skill entrypoint and campaign router
 ├── assets/                         # README campaign flyers
 ├── skills/
 │   ├── classic-dnd-dungeon-master    # Prompt-based fantasy DM with ASCII maps and d20-style checks
@@ -140,12 +136,37 @@ A turnkey starter quest (*The Lost Shrine of the Sun-Stone*) designed to test an
 
 ## ⚡ Install
 
-### SkillsMarket
+### Claude Code
 
-Browse or submit the skills at [SkillsMarket](https://aiskillsmarket.com/submit).
-The marketplace requires an account to submit a skill.
+Install the skills for Claude Code globally or inside your current workspace:
 
-### Manual installation
+**Global installation (available in all projects):**
+```bash
+git clone https://github.com/c4da/dnd-agents.git
+mkdir -p ~/.claude/skills
+cp -r dnd-agents/skills/* ~/.claude/skills/
+```
+
+**Project-level installation (current project only):**
+```bash
+git clone https://github.com/c4da/dnd-agents.git
+mkdir -p .claude/skills
+cp -r dnd-agents/skills/* .claude/skills/
+```
+
+**Windows PowerShell:**
+```powershell
+git clone https://github.com/c4da/dnd-agents.git
+New-Item -ItemType Directory -Force -Path "$HOME\.claude\skills"
+Copy-Item -Recurse .\dnd-agents\skills\* "$HOME\.claude\skills\"
+```
+
+To install a specific skill only (e.g. Dungeon Master):
+```bash
+cp -r dnd-agents/skills/classic-dnd-dungeon-master ~/.claude/skills/
+```
+
+### Antigravity
 
 ```bash
 git clone https://github.com/c4da/dnd-agents.git
@@ -153,15 +174,16 @@ cp -r dnd-agents/skills/* ~/.gemini/antigravity/skills/
 ```
 
 On Windows PowerShell:
-
 ```powershell
 git clone https://github.com/c4da/dnd-agents.git
 Copy-Item -Recurse .\dnd-agents\skills\* "$HOME\.gemini\antigravity\skills\"
 ```
 
-For another compatible agent, install the selected skill according to that
-agent's `SKILL.md` directory convention or paste the file into its supported
-system-prompt configuration.
+### Cursor, Windsurf, ChatGPT & Other Agents
+
+- **Cursor / Windsurf**: Copy the contents of `skills/classic-dnd-dungeon-master/SKILL.md` or `skills/dnd-party-of-agents/SKILL.md` into your `.cursorrules`, `.windsurfrules`, or workspace system instructions.
+- **Claude Desktop / Web / ChatGPT**: Paste the contents of `SKILL.md` or a specific skill into your Custom Instructions, Project Instructions, or system prompt.
+- **Any Agent with `SKILL.md` support**: Copy the skill folder into your agent's configured skills directory.
 
 ---
 

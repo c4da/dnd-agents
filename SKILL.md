@@ -12,7 +12,7 @@ metadata:
 
 # 🐉 DnD-Agents
 
-This root skill is the marketplace entrypoint for the DnD-Agents collection.
+This root skill is the main entrypoint and campaign router for the DnD-Agents collection.
 It is a prompt-only catalog of tabletop roleplay tools and original adventure
 modules. It does not spawn processes, access external tools, write files, or
 use the network.

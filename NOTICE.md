@@ -12,4 +12,4 @@ trademarks, settings, or other protected material.
 
 The skills use a lightweight, fan-made tabletop rules interpretation and are
 not a replacement for official rulebooks. Distributors should review the
-current policies of any marketplace where these skills are listed.
+current policies of any platform where these skills are distributed.

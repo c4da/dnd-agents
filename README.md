@@ -34,6 +34,20 @@ any referenced content files.
 
 These are original promotional illustrations for this repository.
 
+## 🗺️ Campaign List
+
+| Campaign | Tone | Party | Hook |
+|---|---|---:|---|
+| [The Lost Shrine of the Sun-Stone](skills/dnd-quest-the-lost-shrine/SKILL.md) | Classic fantasy adventure | 1–3 | Recover a stolen sun relic from a buried shrine |
+| [The Hollow Lighthouse](skills/dnd-quest-the-hollow-lighthouse/SKILL.md) | Coastal mystery | 1–3 | Investigate missing crews beneath a silent beacon |
+| [The Ember Vault](skills/dnd-quest-the-ember-vault/SKILL.md) | Industrial dungeon survival | 2–4 | Rescue workers before an ember engine overheats |
+| [The Sunken Observatory](skills/dnd-quest-the-sunken-observatory/SKILL.md) | Exploration and puzzle | 2–4 | Rebuild a star map in a flooded ruin |
+| [The Red Tithe](skills/dnd-quest-the-red-tithe/SKILL.md) | Grim gothic horror | 3–5 | Descend beneath a dying city to break a soul-fed bell |
+| [The Wolves of the Ninth Road](skills/dnd-quest-the-wolves-of-the-ninth-road/SKILL.md) | Roman frontier survival horror | 2–4 | Save legionaries and break a werewolf curse before dawn |
+
+The last two campaigns are the darkest. Both preserve a path to mercy; **The
+Wolves of the Ninth Road** is specifically designed to end on hope.
+
 ---
 
 ## ❓ Why Does This Exist?

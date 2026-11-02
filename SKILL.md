@@ -1,11 +1,11 @@
 ---
 name: dnd-agents
-description: A collection of unofficial, prompt-based tabletop fantasy skills for AI agents, including a Dungeon Master, a four-character party, and seven original adventure modules.
+description: A collection of unofficial, prompt-based tabletop fantasy skills for AI agents, including a Dungeon Master, a single-agent or distributed four-character party, and seven original adventure modules.
 license: MIT
 compatibility: Compatible with all AI agents that support SKILL.md or system prompts, including Claude Code, Cursor, Windsurf, Antigravity, GitHub Copilot CLI, Hermes, and ChatGPT.
 metadata:
   author: c4da
-  version: "1.0.0"
+  version: "1.1.0"
   categories: ["fun", "game", "dnd", "tabletop", "ai-skills"]
   tags: ["ai-skills", "agent-skills", "skill-md", "tabletop-ai", "dnd", "rpg", "adventure-modules", "open-source"]
 ---
@@ -25,13 +25,16 @@ When this skill is loaded, ask the user which mode they want:
    [`classic-dnd-dungeon-master`](skills/classic-dnd-dungeon-master/SKILL.md)
    to run a solo or group fantasy adventure.
 2. **Four-character party**: Use
-   [`dnd-party-of-agents`](skills/dnd-party-of-agents/SKILL.md) to have one
-   compatible agent portray a Paladin, Barbarian, Rogue, and Wizard.
+   [`dnd-party-of-agents`](skills/dnd-party-of-agents/SKILL.md) for either one
+   compatible agent portraying a Paladin, Barbarian, Rogue, and Wizard, or a
+   distributed setup with one player agent per character and a coordinator.
 3. **Adventure module**: Choose one of the quests below and run it with the
    Dungeon Master or party skill.
 
-Do not claim that the party mode launches four independent agents. It asks one
-compatible agent to portray four characters in a single conversation.
+The distributed mode still requires an external host to assign agents and
+route messages; the skill itself does not spawn processes or provide
+transport. The single-agent mode asks one compatible agent to portray four
+characters in a single conversation.
 
 ## 🗺️ Adventure Modules
 
@@ -61,4 +64,3 @@ descriptions when requested.
 
 For package metadata and reproducible hashes, see [`registry.json`](registry.json).
 For installation and compatibility details, see [`README.md`](README.md).
-

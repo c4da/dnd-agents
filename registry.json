@@ -71,8 +71,8 @@
     },
     {
       "name": "dnd-party-of-agents",
-      "version": "1.1.0",
-      "description": "An unofficial, prompt-based four-character fantasy adventuring party for terminal agents. The party roleplays a Paladin, Barbarian, Rogue, and Wizard with shared d20-style exploration and combat.",
+      "version": "1.2.0",
+      "description": "An unofficial, prompt-based fantasy party skill supporting either one agent portraying four characters or an externally coordinated player agent per character, with shared d20-style exploration and combat.",
       "author": "c4da",
       "license": "MIT",
       "repository": "https://github.com/c4da/dnd-agents",
@@ -93,6 +93,8 @@
         "dnd",
         "rpg",
         "party-roleplay",
+        "distributed-party",
+        "player-agent",
         "prompt-based"
       ],
       "compatibility": {
@@ -114,10 +116,11 @@
         "writes_files": false,
         "network": false
       },
-      "sha256": "06a1a77ab7bdc020796c134c3c78a4527134ff30c96678a7b04f34911d0aaf59",
-      "skill_md_sha256": "e91c0aa695047d167d8a698fa8ee97dc92891e31c1fae188b37a65691efaae7e",
+      "sha256": "ef5dd8bca1b6a954e6a7a94ebc304ff0e23432d7f458c3352200353b92d22797",
+      "skill_md_sha256": "dbcdd5b054f3604d7f71c417cc48d8fa5b3b28a0b8c3e42de240d9857cee5045",
       "files": [
         "SKILL.md",
+        "references/multi-agent-protocol.md",
         "references/party-roster.md"
       ],
       "path": "skills/dnd-party-of-agents"

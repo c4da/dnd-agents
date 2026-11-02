@@ -1,7 +1,7 @@
 # 🐉 DnD-Agents (`#tabletop-ai`)
 
 > **Unofficial tabletop fantasy roleplay skills for AI agents**
-> Play a solo dungeon crawl, run one of several original starter quests, or ask one compatible agent to portray a four-character adventuring party.
+> Play a solo dungeon crawl, run one of several original starter quests, use one agent to portray a party, or coordinate one player agent per character.
 > Prompt-based, terminal-friendly, and compatible with **Claude Code**, **Cursor**, **Windsurf**, **Antigravity**, **GitHub Copilot CLI**, and **Hermes**.
 
 [![GitHub Topics](https://img.shields.io/badge/topics-ai--skills%20%7C%20agent--skills%20%7C%20skill--md-purple.svg)](https://github.com/c4da/dnd-agents/topics)
@@ -76,7 +76,7 @@ dnd-agents/
 ├── assets/                         # README campaign flyers
 ├── skills/
 │   ├── classic-dnd-dungeon-master    # Prompt-based fantasy DM with ASCII maps and d20-style checks
-│   ├── dnd-party-of-agents           # One agent portraying a Paladin, Barbarian, Rogue, and Wizard
+│   ├── dnd-party-of-agents           # Single-agent party or distributed player-agent protocol
 │   ├── dnd-quest-the-lost-shrine     # Starter Adventure Module: "The Lost Shrine of the Sun-Stone"
 │   ├── dnd-quest-the-hollow-lighthouse # Coastal mystery with a rising-tide clock
 │   ├── dnd-quest-the-ember-vault     # Underground rescue with a rising-heat clock
@@ -96,11 +96,16 @@ The complete roleplay prompt:
 - **Wandering encounter tables** with classic fantasy creatures.
 
 ### 2. 🛡️ `dnd-party-of-agents`
-An opinionated, four-character party portrayed by one compatible agent:
+An opinionated four-character party with both single-agent and distributed modes:
+- **Single-agent mode**: One compatible agent portrays the Paladin, Barbarian, Rogue, and Wizard.
+- **Distributed mode**: An external coordinator assigns one player agent to each character, resolves dice, and owns the canonical party state.
 - **Sir Valerius (Paladin)**: Plate armor, holy longsword. Devout, honorable, protects the party with *Divine Smite* and *Lay on Hands*.
 - **Thokk Ironbreaker (Barbarian)**: Greataxe, unarmored defense. Kicks down doors, rages, screams war cries, and hates complicated plans.
 - **Lyra Nightshade (Rogue)**: Dual daggers, shortbow, thieves' tools. Checks for tripwires, picks rusted iron locks, and strikes with *Sneak Attack*.
 - **Ignis Shadowweaver (Wizard)**: Starry robes, arcane focus, spellbook. Casts *Detect Magic*, *Fireball*, *Shield*, and complains when his robes get muddy.
+
+The distributed assignment and turn contract are documented in
+[`multi-agent-protocol.md`](skills/dnd-party-of-agents/references/multi-agent-protocol.md).
 
 ### 3. 🗝️ `dnd-quest-the-lost-shrine` (Modular Adventure Quest)
 A turnkey starter quest (*The Lost Shrine of the Sun-Stone*) designed to test and showcase all core mechanics:
@@ -214,6 +219,40 @@ leads down into a lead pipe filled with sleep gas!
 With a steady hand and your dagger, you snip the tripwire cleanly. The trap is disarmed!
 Inside lies a skeletal knight clutching a +1 Silver Shortsword and a velvet pouch with 45 ancient gold pieces!"
 ```
+
+---
+
+### Mode C: Distributed Player Agents
+
+Use one coordinator and one compatible agent per character. The coordinator
+creates an assignment manifest, sends each agent its character profile and
+permitted knowledge, then resolves each `PLAYER_ACTION` into a canonical
+`TURN_RESULT`.
+
+```text
+COORDINATOR: You control the scene, NPCs, monsters, rolls, and shared state.
+PLAYER AGENT: You control Lyra only. Be cautious, pragmatic, and dryly funny.
+PLAYER AGENT: Submit one action per turn. Do not invent dice results or speak
+for another character.
+```
+
+Custom profiles can override temperament, goals, fears, bonds, voice, and
+tactical bias without changing a character's statistics or abilities. The
+complete protocol covers timeouts, hidden information, conflicting actions,
+and state handoff:
+[`skills/dnd-party-of-agents/references/multi-agent-protocol.md`](skills/dnd-party-of-agents/references/multi-agent-protocol.md).
+
+---
+
+### Session Resume
+
+You can leave and resume a campaign whenever you want. Most compatible agent
+CLIs provide a basic `/resume` command or an equivalent session-history
+feature. Before leaving, ask the coordinator to print a compact checkpoint
+with the session ID, scene, party state, initiative, active clocks, inventory,
+open quests, and player assignments. The skill itself is prompt-only and does
+not persist state; resume behavior depends on the host CLI retaining the
+conversation.
 
 ---
 

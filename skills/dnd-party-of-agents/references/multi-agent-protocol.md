@@ -1,36 +1,38 @@
 # Distributed Player-Agent Protocol
 
-This protocol lets an external host run the party with one Dungeon Master
-coordinator and one player agent per character. It does not spawn agents or
-provide transport; the host is responsible for routing messages between the
-agents.
+This protocol lets an external host run the party with one Dungeon Master (DM)
+and one player agent per character. The DM is the session coordinator: the DM
+owns the world, rules, rolls, and canonical state. This document does not
+spawn agents or provide transport; the host is responsible for routing
+messages between the DM and players.
 
 ## Session Topology
 
 Use these roles:
 
-1. **Coordinator / Dungeon Master** owns the scene, NPCs, enemies, hidden
-   information, dice resolution, initiative, rules arbitration, and canonical
-   party state.
+1. **Dungeon Master (DM)** owns the scene, NPCs, enemies, hidden information,
+   dice resolution, initiative, rules arbitration, and canonical party state.
+   In integrations that use the word `coordinator`, it means this DM role; it
+   is not a separate gameplay agent.
 2. **Player agents** each control exactly one party character and make that
    character's decisions.
 3. **Optional human leader** can issue party-level goals, but cannot silently
-   change a character's action or the coordinator's resolved state.
+   change a character's action or the DM's resolved state.
 
 The same party skill can still run in single-agent mode when no external host
 is available.
 
 ## Assignment Manifest
 
-Give the coordinator and every player the same session identifier and this
-assignment manifest. The `profile` object contains optional overrides; omitted
+Give the DM and every player the same session identifier and this assignment
+manifest. The `profile` object contains optional overrides; omitted
 fields use the selected character's default profile from
 `party-roster.md`.
 
 ```yaml
 party_mode: distributed
 session_id: ash-fall-elmridge-001
-coordinator: dm-agent
+dungeon_master: dm-agent
 players:
   - agent_id: player-valerius
     character: Valerius
@@ -54,11 +56,11 @@ Rules:
 
 - Every active character has one owner. Do not assign one character to two
   agents.
-- An agent may control only its assigned character unless the coordinator
+- An agent may control only its assigned character unless the DM
   explicitly grants a temporary narration task.
 - A personality override changes behavior and voice, not class abilities,
   equipment, hit points, or established facts.
-- The coordinator confirms the final assignment before the first scene.
+- The DM confirms the final assignment before the first scene.
 
 ## Player-Agent Prompt
 
@@ -76,8 +78,8 @@ Personality profile:
 You may:
 - speak and act for your character;
 - propose one meaningful action per turn;
-- explain your character's reasoning and ask the coordinator for a check;
-- reveal only information in the current coordinator message or your character's
+- explain your character's reasoning and ask the DM for a check;
+- reveal only information in the current DM message or your character's
   established knowledge.
 
 You may not:
@@ -114,10 +116,10 @@ ooc: none
 The player proposes an action and any requested check. The player does not
 provide the result.
 
-## Coordinator Turn Envelope
+## Dungeon Master Turn Envelope
 
-The coordinator resolves actions, updates canonical state, and sends each
-player the information that character is allowed to know.
+The DM resolves actions, updates canonical state, and sends each player the
+information that character is allowed to know.
 
 ```text
 TURN_RESULT
@@ -131,14 +133,14 @@ state_delta: trap identified; party route unchanged
 next_prompt: Thokk, choose whether to hold the rear or advance.
 ```
 
-The coordinator should:
+The DM should:
 
 - resolve dice once and use that result consistently;
 - update HP, conditions, spell slots, rages, inventory, clocks, and initiative
   in one canonical state;
 - send secret information only to the relevant player agent;
 - reject contradictory actions and ask for a replacement action;
-- make NPCs and monsters speak only through the coordinator.
+- make NPCs and monsters speak only through the DM.
 
 ## Personality Profiles
 
@@ -153,32 +155,31 @@ Use these fields for custom personalities:
 | `voice` | Speech rhythm, vocabulary, and mannerisms |
 | `tactical_bias` | Preferred risk level and combat approach |
 | `boundaries` | Topics or actions the character refuses |
-| `secrets` | Coordinator-controlled private facts, if any |
+| `secrets` | DM-controlled private facts, if any |
 
 Keep personalities actionable rather than cosmetic. A good profile changes
 decisions, dialogue, and relationships without overriding the player's agency
-or the coordinator's rules.
+or the DM's rules.
 
 ## Turn Order and Failure Handling
 
-- In exploration, the coordinator may poll all available players and resolve
+- In exploration, the DM may poll all available players and resolve
   actions in declared order.
 - In combat, use initiative order. A player agent gets one response window for
   its turn and may pass.
-- If an agent times out, the coordinator holds position, takes a defensive
+- If an agent times out, the DM holds position, takes a defensive
   default action, or asks the human leader; it must not invent a dramatic
   action that changes the character's goals.
-- If two players claim the same action, the coordinator asks for intent
+- If two players claim the same action, the DM asks for intent
   clarification and resolves only one canonical action.
-- If a player drifts out of character, the coordinator can restate the profile
+- If a player drifts out of character, the DM can restate the profile
   and request a replacement response.
 
 ## Recommended Startup Sequence
 
-1. The coordinator creates the session identifier and assignment manifest.
+1. The DM creates the session identifier and assignment manifest.
 2. Each player receives only its own character sheet, profile, and permitted
    background knowledge.
-3. The coordinator announces the scene, visible state, and turn order.
+3. The DM announces the scene, visible state, and turn order.
 4. Players return one `PLAYER_ACTION` envelope at a time.
-5. The coordinator returns one `TURN_RESULT`, updates state, and continues.
-
+5. The DM returns one `TURN_RESULT`, updates state, and continues.

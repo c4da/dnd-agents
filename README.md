@@ -98,7 +98,7 @@ The complete roleplay prompt:
 ### 2. 🛡️ `dnd-party-of-agents`
 An opinionated four-character party with both single-agent and distributed modes:
 - **Single-agent mode**: One compatible agent portrays the Paladin, Barbarian, Rogue, and Wizard.
-- **Distributed mode**: An external coordinator assigns one player agent to each character, resolves dice, and owns the canonical party state.
+- **Distributed mode**: A Dungeon Master (DM) assigns one player agent to each character, resolves dice, and owns the canonical party state.
 - **Sir Valerius (Paladin)**: Plate armor, holy longsword. Devout, honorable, protects the party with *Divine Smite* and *Lay on Hands*.
 - **Thokk Ironbreaker (Barbarian)**: Greataxe, unarmored defense. Kicks down doors, rages, screams war cries, and hates complicated plans.
 - **Lyra Nightshade (Rogue)**: Dual daggers, shortbow, thieves' tools. Checks for tripwires, picks rusted iron locks, and strikes with *Sneak Attack*.
@@ -224,13 +224,13 @@ Inside lies a skeletal knight clutching a +1 Silver Shortsword and a velvet pouc
 
 ### Mode C: Distributed Player Agents
 
-Use one coordinator and one compatible agent per character. The coordinator
-creates an assignment manifest, sends each agent its character profile and
+Use one Dungeon Master (DM) and one compatible player agent per character. The
+DM creates an assignment manifest, sends each agent its character profile and
 permitted knowledge, then resolves each `PLAYER_ACTION` into a canonical
 `TURN_RESULT`.
 
 ```text
-COORDINATOR: You control the scene, NPCs, monsters, rolls, and shared state.
+DM / COORDINATOR: You control the scene, NPCs, monsters, rolls, and shared state.
 PLAYER AGENT: You control Lyra only. Be cautious, pragmatic, and dryly funny.
 PLAYER AGENT: Submit one action per turn. Do not invent dice results or speak
 for another character.
@@ -248,7 +248,7 @@ and state handoff:
 
 You can leave and resume a campaign whenever you want. Most compatible agent
 CLIs provide a basic `/resume` command or an equivalent session-history
-feature. Before leaving, ask the coordinator to print a compact checkpoint
+feature. Before leaving, ask the Dungeon Master to print a compact checkpoint
 with the session ID, scene, party state, initiative, active clocks, inventory,
 open quests, and player assignments. The skill itself is prompt-only and does
 not persist state; resume behavior depends on the host CLI retaining the

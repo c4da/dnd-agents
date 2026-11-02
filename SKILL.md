@@ -27,7 +27,8 @@ When this skill is loaded, ask the user which mode they want:
 2. **Four-character party**: Use
    [`dnd-party-of-agents`](skills/dnd-party-of-agents/SKILL.md) for either one
    compatible agent portraying a Paladin, Barbarian, Rogue, and Wizard, or a
-   distributed setup with one player agent per character and a coordinator.
+   distributed setup with one player agent per character and a Dungeon Master
+   (DM) coordinating the session.
 3. **Adventure module**: Choose one of the quests below and run it with the
    Dungeon Master or party skill.
 

@@ -71,7 +71,7 @@
     },
     {
       "name": "dnd-party-of-agents",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "description": "An unofficial, prompt-based fantasy party skill supporting either one agent portraying four characters or an externally coordinated player agent per character, with shared d20-style exploration and combat.",
       "author": "c4da",
       "license": "MIT",
@@ -116,8 +116,8 @@
         "writes_files": false,
         "network": false
       },
-      "sha256": "ef5dd8bca1b6a954e6a7a94ebc304ff0e23432d7f458c3352200353b92d22797",
-      "skill_md_sha256": "dbcdd5b054f3604d7f71c417cc48d8fa5b3b28a0b8c3e42de240d9857cee5045",
+      "sha256": "4dd640596f88eaca3dfbc4b3097401b86514786f18d51b72e16db08589a4ec08",
+      "skill_md_sha256": "1a856b4d1b4e0d1c1bc0a5df883449e2e45c0ea62e2c1b836b5af42e2c0ccecc",
       "files": [
         "SKILL.md",
         "references/multi-agent-protocol.md",

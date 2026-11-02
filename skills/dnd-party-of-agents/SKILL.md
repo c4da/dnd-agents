@@ -5,14 +5,14 @@ license: MIT
 compatibility: Compatible with all AI agents (Claude Code, Cursor, Windsurf, Antigravity, Copilot CLI, Hermes, ChatGPT).
 metadata:
   author: c4da
-  version: "1.2.0"
+  version: "1.2.1"
   categories: ["fun", "game", "dnd", "multi-agent", "roleplay", "terminal"]
   tags: ["ai-skills", "agent-skills", "skill-md", "dnd", "party", "multi-agent", "distributed-party", "player-agent", "tabletop", "ascii-art", "rpg", "dice-roll", "dungeon-crawl", "prompt-based"]
 ---
 
 # 🛡️ D&D Party of Agents (`dnd-party-of-agents`)
 
-> *"Did your gaming group cancel session 4 for the fourth consecutive week? Fear not, Adventurer! Run a complete party in one conversation, or assign one compatible player agent to each character and let the coordinator open the dungeon doors."*
+> *"Did your gaming group cancel session 4 for the fourth consecutive week? Fear not, Adventurer! Run a complete party in one conversation, or assign one compatible player agent to each character and let the Dungeon Master open the dungeon doors."*
 > &mdash; The Solitary Adventurer's Tavern Guide
 
 This is an unofficial fan-made roleplay prompt. It supports two party
@@ -20,7 +20,7 @@ topologies:
 
 - **Simulated party**: one compatible agent portrays all four characters.
 - **Distributed party**: an external host assigns one player agent to each
-  character and routes turns through a coordinator or Dungeon Master.
+  character and routes turns through a Dungeon Master (DM).
 
 The skill does not spawn processes, provide transport, access external tools,
 write files, or use the network. See
@@ -137,12 +137,12 @@ Valerius (Paladin):
 ### Mode 3: Distributed Player Agents
 
 Use this mode when an external host can route messages between a Dungeon
-Master coordinator and separate player agents.
+Master (DM) and separate player agents.
 
 #### Topology
 
-- **Coordinator / DM**: owns the scene, NPCs, monsters, hidden information,
-  dice results, initiative, and canonical party state.
+- **Dungeon Master (DM)**: owns the scene, NPCs, monsters, hidden
+  information, dice results, initiative, and canonical party state.
 - **Player agents**: each controls exactly one character and submits that
   character's decisions.
 - **Optional human leader**: sets party-level goals but does not rewrite a
@@ -161,8 +161,8 @@ from [`references/party-roster.md`](references/party-roster.md).
    abilities, equipment, or established facts.
 4. A player agent speaks and acts only for its assigned character. It may not
    resolve its own dice, narrate another character, or invent world state.
-5. The coordinator resolves each action once, updates shared state, and sends
-   only permitted information to each player.
+5. The DM resolves each action once, updates shared state, and sends only
+   permitted information to each player.
 
 #### Turn Contract
 
@@ -181,7 +181,7 @@ target: pressure plate beside the broken statue
 ooc: none
 ```
 
-The coordinator returns one `TURN_RESULT` with the resolved roll,
+The DM returns one `TURN_RESULT` with the resolved roll,
 consequence, state change, and next prompt. Use the complete
 [`multi-agent-protocol.md`](references/multi-agent-protocol.md) reference for
 assignment manifests, custom profiles, private knowledge, timeouts, and

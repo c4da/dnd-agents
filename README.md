@@ -73,6 +73,7 @@ dnd-agents/
 ├── skills/
 │   ├── classic-dnd-dungeon-master    # Prompt-based fantasy DM with ASCII maps and d20-style checks
 │   ├── dnd-party-of-agents           # Single-agent party or distributed player-agent protocol
+│   ├── dnd-scene-illustrator         # On-demand scene illustration & visual reward engine
 │   ├── dnd-quest-the-lost-shrine     # Starter Adventure Module: "The Lost Shrine of the Sun-Stone"
 │   ├── dnd-quest-the-hollow-lighthouse # Coastal mystery with a rising-tide clock
 │   ├── dnd-quest-the-ember-vault     # Underground rescue with a rising-heat clock
@@ -103,7 +104,16 @@ An opinionated four-character party with both single-agent and distributed modes
 The distributed assignment and turn contract are documented in
 [`multi-agent-protocol.md`](skills/dnd-party-of-agents/references/multi-agent-protocol.md).
 
-### 3. 🗝️ `dnd-quest-the-lost-shrine` (Modular Adventure Quest)
+### 3. 🎨 `dnd-scene-illustrator` (On-Demand Visual Rewards)
+Commemorate key campaign achievements and visualize scenes on demand:
+- **Visual Rewards**: Automatically offers atmospheric scene depictions when players reach milestones (defeating a boss, unsealing an ancient vault, discovering an epic vista, or rolling a Natural 20).
+- **On-Demand Commands**: Type `/render`, `/illustrate`, `/render boss`, or `/render party` at any time to see the current location, combat action, or characters.
+- **Adaptive Execution**:
+  - In environments with image-generation tools (e.g. Antigravity, ChatGPT/DALL-E), generates and displays the actual scene image.
+  - In terminal environments (Claude Code, Copilot CLI, Hermes), renders a framed ASCII landscape card and an optimized AI image generator prompt (for Midjourney/DALL-E).
+- **Aesthetic Presets**: Classic 1980s TSR pen-and-ink cross-hatch, dark gothic oil painting, and cinematic 16:9 high-fantasy matte.
+
+### 4. 🗝️ `dnd-quest-the-lost-shrine` (Modular Adventure Quest)
 A turnkey starter quest (*The Lost Shrine of the Sun-Stone*) designed to test and showcase all core mechanics:
 - **Act I**: Wilderness tracking, Passive Perception vs. Goblin Stealth, Ranged Ambush.
 - **Act II**: Poison dart pressure plates, Thieves' Tools disarm check, the ancient Sun-Riddle.

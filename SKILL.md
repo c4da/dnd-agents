@@ -29,7 +29,10 @@ When this skill is loaded, ask the user which mode they want:
    compatible agent portraying a Paladin, Barbarian, Rogue, and Wizard, or a
    distributed setup with one player agent per character and a Dungeon Master
    (DM) coordinating the session.
-3. **Adventure module**: Choose one of the quests below and run it with the
+3. **Scene Illustrator & Visual Rewards**: Use
+   [`dnd-scene-illustrator`](skills/dnd-scene-illustrator/SKILL.md) to add
+   on-demand artwork (`/render`) and milestone scene illustrations to any campaign.
+4. **Adventure module**: Choose one of the quests below and run it with the
    Dungeon Master or party skill.
 
 The distributed mode still requires an external host to assign agents and
